@@ -1,12 +1,11 @@
-// Write your Character component here
 import React from "react";
 
-export const Character = (props) => {
+const Character = (props) => {
+  const name = props.data.name
   return (
     <div>
-      {props.data.map((value, index) => (
-        <p key={index}>{value.name}</p>
-      ))}
+      <span>{name}</span>
     </div>
   );
 };
+export default Character;
