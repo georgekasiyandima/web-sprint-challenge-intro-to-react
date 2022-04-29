@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Characters from "./components/Characters";
 import Character from "./components/Character";
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Characters</h1>
       {characters.map((value, index) => (
-        <Character data={value} key={index}/>
+        <Character data={value} key={index} />
       ))}
     </div>
   );

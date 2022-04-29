@@ -1,10 +1,10 @@
 import React from "react";
 
 const Character = (props) => {
-  console.log(props);
+  const name = props.data.name;
   return (
     <div>
-      <span key={props.index}>{props.data.name}</span>
+      <span>{name}</span>
     </div>
   );
 };
